@@ -1,0 +1,70 @@
+main {
+    background: red;
+}
+.side_nav {
+    background: #C4E6BE;
+}
+.side_nav {
+    float: none;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.side_nav .row + .row {
+    padding-top: 30%;
+}
+.side_nav header > img {
+    float: left;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.user_settings {
+    align-items: center;
+    justify-content: center;
+    padding-top: 7%
+}
+.class_links ul, .personal_links ul {
+    list-style: none;
+}
+.class_links a, .personal_links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.class_links a:hover, .personal_links a:hover {
+    background-color: #8fbb88;
+}
+
+.class_name {
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+.class_timetable {
+}
+
+mark {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+.professor_links ul {
+    list-style: none;
+    display: inline-flex;
+}
+.professor_links li {
+    padding-right:10px;
+}
+.professor_links a {
+    text-decoration: none;
+    color:black;
+}
+.lecture {
+    margin-right: -20px;
+    background-color: black;
+    border-color: red;
+    border-width: thick;
+    border-style: inset;
+}

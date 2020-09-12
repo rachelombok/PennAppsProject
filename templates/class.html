@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="PennAppsProject/static/css/class.css">
+
+    <!-- basic css and bootstrap -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:\Users\Gftd_\Documents\Personal\PennApps\PennAppsProject\static\css\course.css">
     <title>Class</title>
-  </head>
-  <body>
+</head>
+<body>
     <main>
         <div value="container-fluid">
             <div class="row">
-                <div class="d-flex justify-content-center col class_name">
-                    <p> Class Code - Class Name </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-
-                </div>
-                <div class="col d-flex justify-content-center class_timetable">
-                    <p>M T W TH F <br></p>
-                    <p>2:00 - 3:30</p>
-                </div>
-                <div class="col">
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="d-flex justify-content-center col professor_name">
-                        <p>Professor Name</p>
-                        <div class="professor_links">
+                <div class="col-3 side_nav">
+                    <div class="row">
+                        <header class="col">
+                            <img src="C:\Users\Gftd_\Documents\Personal\PennApps\PennAppsProject\static\img\default_logo.jpg" alt="User Image">
+                        </header>
+                        <div class="col user_settings">
+                            <p><a href="#">Logout</a></p>
+                            <p><a href="#">Settings</a></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="class_links">
+                            <h2>Classes</h2>
                             <ul>
-                                <li>Email</li>
-                                <li>Webpage</li>
+                                <li><a href="#">#CS 101</a></li>
+                                <li><a href="#">#CHEM 101</a></li>
                             </ul>
                         </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="d-flex justify-content-center col lecture">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xbOU-2gy3Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div class="d-flex justify-content-center col syllabus">
-                    <iframe width="560" height="945" src="https://drive.google.com/file/d/1nFlQN0OWX_KaRMBNfZFVBfKnx_vCceZU/view?usp=sharing"></iframe>
-                </div>
-            </div>
-            <div class="row">
-                <div class="d-flex justify-content-center col chat">
-                    <div class="review_bar">
-                        <p>Avg Rating: ⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="row">
+                        <div class="personal_links">
+                            <h2>Personal</h2>
+                            <ul>
+                                <li><a href="#">#Notes</a></li>
+                                <li><a href="#">#Study Room</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <p>Student 1: This is a message.</p>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <p>Student 2: So is this!</p>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <p>Student 1: 😂</p>
+                <div class="col-9">
+                    <div class="row">
+                        <div class="d-flex justify-content-center col class_name">
+                            <p> Class Code - Class Name </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-end class_timetable">
+                            <p><mark>M</mark> T <mark>W</mark> TH <mark>F</mark> <br></p>
+                        </div>
+                        <div class="col d-flex justify-content-start class_timetable">
+                            <p>2:00 - 3:30</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-center col professor_name">
+                            <p>Professor Name</p>
+                            <div class="professor_links">
+                                <ul>
+                                    <li><a href="#">Email</a></li>
+                                    <li><a href="#">Webpage</a></li>
+                                    <li><a href="#">Syllabus</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-center col lecture">
+                        <iframe width="600" height="400"  src= "https://primetime.bluejeans.com/a2m/embeds/attendee?sharingID=rucjduyt&width=600&height=400&enableNPS=true&color1=000000&color2=aa5be7&backgroundColor=aa5be7&captureUserDetails=false&launchFullExperience=false" frameborder=0 encrypted-media allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-center col chat">
+                        <div class="review_bar">
+                            <p>Avg Rating: ⭐⭐⭐⭐⭐</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <p>Student 1: This is a message.</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <p>Student 2: So is this!</p>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <p>Student 1: 😂</p>
+                </div>
             </div>
         </div>
-    </main>
-  </body>
+    </div>
+</main>
+</body>
 </html>
