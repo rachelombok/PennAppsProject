@@ -1,8 +1,26 @@
+:root {
+    --navbar-color: #C4E6BE;
+    --bg-color: #EAC9C1;
+    --highlight-color: #665687;
+    --text-color: #0C120C;
+    --gray: #8fbb88;
+    --font-family: 'Noto Sans', sans-serif;
+}
+body {
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
 main {
-    background: red;
+    background: var(--bg-color);
+}
+mark {
+    background-color: var(--highlight-color);
+    color: var(--black);
+    padding: 10px;
+    border-radius: 3px;
 }
 .side_nav {
-    background: #C4E6BE;
+    background: var(--navbar-color);
 }
 .side_nav {
     float: none;
@@ -32,24 +50,32 @@ main {
     color: black;
 }
 .class_links a:hover, .personal_links a:hover {
-    background-color: #8fbb88;
+    background-color: var(--gray);
 }
 
 .class_name {
-    margin-top: 10px;
+    font-weight: bold;
+    padding-top: 20px;
     text-transform: uppercase;
-    text-shadow: 1px 1px 2px black;
+    text-shadow: -1px 2px 13px var(--text-color);
 }
 
 .class_timetable {
+    margin-top: none;
+    font-weight: bold;
 }
 
-mark {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 50%;
+.class_time {
+    padding: 2px;
+    font-size: 26px;
+    font-weight: bold;
 }
+.class_time p {
+    background: var(--highlight-color);
+    padding:5px;
+    border-radius: 20px 20px 20px 20px;
+}
+
 .professor_links ul {
     list-style: none;
     display: inline-flex;
@@ -62,9 +88,5 @@ mark {
     color:black;
 }
 .lecture {
-    margin-right: -20px;
-    background-color: black;
-    border-color: red;
-    border-width: thick;
-    border-style: inset;
+    padding-left: 10%;
 }
