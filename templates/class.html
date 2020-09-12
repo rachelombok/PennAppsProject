@@ -6,7 +6,7 @@
     <!-- basic css and bootstrap -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\Gftd_\Documents\Personal\PennApps\PennAppsProject\static\css\course.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/course.css') }}">
     <title>Class</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
                 <div class="col-3 side_nav">
                     <div class="row">
                         <header class="col">
-                            <img src="C:\Users\Gftd_\Documents\Personal\PennApps\PennAppsProject\static\img\default_logo.jpg" alt="User Image">
+                            <img src="{{ url_for('static', filename='img/default_logo.jpg') }}" alt="User Image">
                         </header>
                         <div class="col user_settings">
                             <p><a href="#">Logout</a></p>
