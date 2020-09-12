@@ -2,39 +2,68 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="PennAppsProject/static/css/class.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Class</title>
   </head>
   <body>
     <main>
-        <div class="class_name">
-            <p> Class Code - Class Name </p>
-            <div class="class_timetable">
-                <p>M T W TH F</p>
+        <div value="container-fluid">
+            <div class="row">
+                <div class="d-flex justify-content-center col class_name">
+                    <p> Class Code - Class Name </p>
+                </div>
             </div>
-        </div>
-        <div class="professor_info">
-            <p>Professor Name</p>
-            <ul>
-                <li>Email</li>
-                <li>Webpage</li>
-            </ul>
-        </div>
-        <div class="lecture">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/xbOU-2gy3Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="syllabus">
-            <iframe width="560" height="945" src="https://drive.google.com/file/d/1nFlQN0OWX_KaRMBNfZFVBfKnx_vCceZU/view?usp=sharing"></iframe>
-        </div>
-        <div class="chat">
-            <div class="review_bar">
-                <p>Avg Rating: ⭐⭐⭐⭐⭐</p>
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col d-flex justify-content-center class_timetable">
+                    <p>M T W TH F <br></p>
+                    <p>2:00 - 3:30</p>
+                </div>
+                <div class="col">
+
+                </div>
             </div>
-            <p>Student 1: This is a message.</p>
-            <p>Student 2: So is this!</p>
-            <p>Student 1: 😂</p>
+            <div class="row">
+                <div class="d-flex justify-content-center col professor_name">
+                        <p>Professor Name</p>
+                        <div class="professor_links">
+                            <ul>
+                                <li>Email</li>
+                                <li>Webpage</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center col lecture">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xbOU-2gy3Yo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center col syllabus">
+                    <iframe width="560" height="945" src="https://drive.google.com/file/d/1nFlQN0OWX_KaRMBNfZFVBfKnx_vCceZU/view?usp=sharing"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center col chat">
+                    <div class="review_bar">
+                        <p>Avg Rating: ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p>Student 1: This is a message.</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p>Student 2: So is this!</p>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <p>Student 1: 😂</p>
+            </div>
         </div>
     </main>
-
-
   </body>
 </html>
