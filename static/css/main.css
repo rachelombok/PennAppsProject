@@ -13,3 +13,7 @@ body {
 main {
     background: var(--bg-color);
 }
+img {
+    width: 10px;
+    height: 10px;
+}

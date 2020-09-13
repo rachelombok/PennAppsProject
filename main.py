@@ -4,10 +4,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello, World!"
-
-@app.route("/home")
-def salvador():
     return render_template('home.html')
 
 @app.route("/create_class")

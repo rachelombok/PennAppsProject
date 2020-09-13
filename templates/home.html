@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
+          <meta charset="utf-8">
+          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+          <!-- css and bootstrap -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+          <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+          <link rel="icon" href="{{url_for('static', filename='img/lightbulb_logo.png')}}" alt="Lightbulb Logo">
+          <title>Lightbulb Home</title>
   </head>
   <body>
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
+    <div class="row">
+        <div class="col d-flex align-items-center justify-content-center">
+            <a href="/class">View Template Class Page</a>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+            <img src="{{url_for('static', filename='img/lightbulb_logo.png')}}" alt="Lightbulb Logo">
+        </div>
+        <div class="col d-flex align-items-center justify-content-center">
+            <a href="/create_class">Create a Class Page</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex align-items-center justify-content-center">
+            <h1>Lightbulb Pages</h1>
+        </div>
+    </div>
   </body>
 </html>
