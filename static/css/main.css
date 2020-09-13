@@ -1,0 +1,15 @@
+:root {
+    --navbar-color: #C4E6BE;
+    --bg-color: #EAC9C1;
+    --highlight-color: #665687;
+    --text-color: #0C120C;
+    --gray: #8fbb88;
+    --font-family: 'Noto Sans', sans-serif;
+}
+body {
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+main {
+    background: var(--bg-color);
+}

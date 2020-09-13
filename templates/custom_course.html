@@ -1,0 +1,13 @@
+{% extends "class_template.html" %}
+{% with req = req %}
+
+{% block title %}{{ req.get("course_code") }}{% endblock %}
+{% block course %}{{req.get("course_code")}} - {{req.get("course_title")}} {% endblock %}
+{% block time %}{{req.get("start_time")}} - {{req.get("end_time")}}{% endblock %}
+{% block professor_name %}{{req.get("professor_name")}}{% endblock %}
+{% block professor_links %}
+    <li><a href="mailto:{{req.get("email")}}?subject={{ req.get("course_code") }}">Email</a></li>
+    <li><a href="{{req.get("website_link")}}">Webpage</a</li>
+    <li><a href="{{req.get("syllabus_link")}}">Syllabus</a></li>
+{% endblock %}
+{% endwith %}

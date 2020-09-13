@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/course.css') }}">
     <link rel="icon" href="{{url_for('static', filename='img/lightbulb_logo.png')}}" alt="Lightbulb Logo">
-    <title>Class</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <main>
@@ -45,7 +45,7 @@
                 <div class="col-9">
                     <div class="row">
                         <div class="d-flex justify-content-center col class_name">
-                            <p> Class Code - Class Name </p>
+                            <p>{% block course %} {% endblock %}</p>
                         </div>
                     </div>
                     <div class="row">
@@ -53,17 +53,15 @@
                             <p><mark>M</mark> T <mark>W</mark> TH <mark> F </mark></p>
                         </div>
                         <div class="col d-flex align-items-center justify-content-start class_time">
-                            <p>2:00 - 3:30</p>
+                            <p>{% block time %} {% endblock %}</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="d-flex justify-content-center col professor_name">
-                            <p>Professor Name</p>
+                            <p>{% block professor_name %} {% endblock %}</p>
                             <div class="professor_links">
                                 <ul>
-                                    <li><a href="#">Email</a></li>
-                                    <li><a href="#">Webpage</a></li>
-                                    <li><a href="#">Syllabus</a></li>
+                                    {% block professor_links %} {% endblock %}
                                 </ul>
                             </div>
                         </div>

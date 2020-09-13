@@ -1,0 +1,62 @@
+{% extends "general_template.html" %}
+
+{% block title %}Create Class{% endblock %}
+
+{% block main %}
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Create Class</h1>
+      <hr>
+      <form action="/custom_course" method="POST">
+
+  <div class="form-group">
+    <label>Course Code</label>
+    <input type="text" class="form-control" id="course_code" name="course_code" placeholder="Ex. CS 2110">
+  </div>
+
+  <div class="form-group">
+    <label>Course Title</label>
+    <input type="text" class="form-control" id="course_title" name="course_title" placeholder="Ex. Computer Organization">
+  </div>
+
+  <div class="form-group">
+    <label>Start Time</label>
+    <input type="text" class="form-control" id="start_time" name="start_time" placeholder="Ex. 2:30pm">
+  </div>
+
+  <div class="form-group">
+    <label>End Time</label>
+    <input type="text" class="form-control" id="end_time" name="end_time" placeholder="Ex. 3:30pm">
+  </div>
+
+  <div class="form-group">
+    <label>Professor Name</label>
+    <input type="text" class="form-control" id="professor_name" name="professor_name" placeholder="Ex. Professor Louis">
+  </div>
+
+  <div class="form-group">
+    <label>Professor Email</label>
+    <input type="email" class="form-control" id="email" name="email" placeholder="Ex. proflouis@univ.edu">
+  </div>
+
+  <div class="form-group">
+    <label>Professor Website</label>
+    <input type="url" class="form-control" id="website_link" name="website_link" placeholder="Ex. proflouis.com">
+  </div>
+
+  <div class="form-group">
+    <label>Professor Syllabus</label>
+    <input type="url" class="form-control" id="syllabus_link" name="syllabus_link" placeholder="Enter link to the syllabus">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Create Course Page</button>
+
+
+</form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
